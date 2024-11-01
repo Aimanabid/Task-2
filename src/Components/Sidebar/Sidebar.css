@@ -1,0 +1,14 @@
+.sidebar{
+    list-style: none;
+    font-family:  sans-serif;
+    font-size: 16px;
+    
+}
+.sidebartxt{
+    margin: 0;
+    padding-left: 13px;
+}
+/* .sidebarstick{
+    position: fixed;
+    top: 0px;
+} */
