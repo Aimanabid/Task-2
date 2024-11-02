@@ -8,9 +8,8 @@ import './Content.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus} from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
-const Content = () => {
+const Content = ({setShowForm}) => {
   const [clients, setclients] = useState([])
   const ClientData=async()=>{
     let result = await axios ('https://jsonplaceholder.typicode.com/users')
@@ -74,7 +73,7 @@ const Content = () => {
             </div>
             <div >
             <button className='button1'><img src={icon4} alt="upload" className='mx-2'/>Upload CVS</button>
-            <Link to= '/newClient'><button className='ms-2 button2'><FontAwesomeIcon icon={faPlus} className='mx-2'/>New Client</button></Link>
+            <button className='ms-2 button2' onClick={()=>{setShowForm(true)}}><FontAwesomeIcon icon={faPlus} className='mx-2'/>New Client</button>
             </div>
             </div>
             </div>
