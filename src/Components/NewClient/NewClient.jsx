@@ -1,52 +1,57 @@
 import React from 'react'
-import Sidebar from '../Sidebar/Sidebar'
-import Navbar from '../Navbar/Navbar'
 import '../../App.css'
 import '../Sidebar/Sidebar.css'
 import './NewClient.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClose } from '@fortawesome/free-solid-svg-icons'
 
-const NewClient = () => {
+const NewClient = ({setShowForm}) => {
   return (
     <>
-    <div className='container-fluid'>
-    <div className="row">
-    <div className="col-2 column2 bg-light" >
-      <Sidebar/>
+
+    <div className="form-container mt-6  ">
+    <div className='d-flex justify-content-between'>
+      <p className='formtext fs-3 text-center fw-bold'>Add Client</p>
+      <FontAwesomeIcon icon={faClose} className='mt-3 crossicon' onClick={()=>{setShowForm(false)}}/>
       </div>
-      <div className="col-10 column10">
-      <Navbar/>
-      <div className="form-container ">
-      <p className='formtext fs-3 text-center fw-bold'>Create Account</p>
       <form>
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
+          placeholder="Client Name"
           className="form-input"
           
           required
         />
         <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
+          type="text"
+          name="companyName"
+          placeholder="Company Name"
           className="form-input" required
         />
         <input
-          type="password"
-          name="password"
-          placeholder="Password"
+          type="email"
+          name="email"
+          placeholder="Email"
+          className="form-input" required
+        />
+        
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone No."
           className="form-input"
           required
         />
-        <button type="submit" className="form-button">Sign Up</button>
+        <input
+          type="text"
+          name="proposal"
+          placeholder="Shared Proposal"
+          className="form-input"
+          required
+        />
+        <button type="submit" className="form-button">Add</button>
       </form>
-      <div className="form-footer">
-        <p className='formtext'>Already have an account? <b>Login here</b></p>
-      </div>
-    </div>
-      </div>
-    </div>
     </div>
       
     </>
