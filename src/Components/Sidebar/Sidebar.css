@@ -8,7 +8,27 @@
     margin: 0;
     padding-left: 13px;
 }
-/* .sidebarstick{
-    position: fixed;
-    top: 0px;
-} */
+.sidebarstick{
+    margin-top: 34%;
+}
+ .sidebartxt2{
+    font-size: smaller;
+    text-align: start;
+    margin-top: 12%;
+    color: #10898F;
+    padding: 4px;
+ }
+ .sidebartxt3{
+    color: black;
+    font-size: small;
+    padding-left: 4px;
+ }
+ .sidebaricons{
+    margin-top: 48%;
+    padding: 0px;
+ }
+ .sidebartxt4{
+    font-size: small;
+    color: grey;
+    margin-left: 6%;
+ }
