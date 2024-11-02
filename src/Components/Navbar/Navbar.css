@@ -1,15 +1,19 @@
 .search-container input[type=text] {
-    border: none;
-    outline: none;
-    font-size: smaller;
-  }
-  div.search-container{
-    border: 1px solid lightgray;
-    padding: 8px;
-    border-radius: 22px;
-    height: 42px;
-  }
-  .navbartxt{
-    font-size: x-large;
-    font-weight: 500;
-  }
+  border: none;
+  outline: none;
+  font-size: smaller;
+}
+div.search-container{
+  border: 1px solid lightgray;
+  padding: 8px;
+  border-radius: 22px;
+  height: 42px;
+}
+.navbartxt{
+  font-size: x-large;
+  font-weight: 500;
+}
+.navbaricons{
+  border: 1px solid lightgrey;
+  border-radius: 44%;
+}
